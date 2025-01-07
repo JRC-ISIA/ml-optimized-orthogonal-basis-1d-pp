@@ -8,6 +8,7 @@ timization, Cham: Springer Nature Switzerland, 2025, pp. 427–441. DOI: 10.
 1007/978-3-031-75623-8_33_
 
 See _citation.bib_ for details on citation.  
+This project is licensed under the terms of the MIT license.  
 
  <!-- - https://doi.org/10.1007/978-3-031-75623-8_33
  - https://doi.org/10.48550/arXiv.2403.08579
