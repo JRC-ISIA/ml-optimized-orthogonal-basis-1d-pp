@@ -37,10 +37,10 @@ x = np.linspace(0, 2*np.pi, 50)
 y = np.sin(x)
 
 pp = model.PP(polydegree=7, polynum=3, ck=3, basis='chebyshev')
-opt_sgd = keras.optimizers.Adam(amsgrad=True, learning_rate=0.1)
+opt = keras.optimizers.Adam(amsgrad=True, learning_rate=0.1)
 
 alpha = 0.01 # optimization: how much emphasis do we want to put on continuity?
-pp.fit(x, y, optimizer=opt_sgd, n_epochs=600, factor_approximation_quality=1-alpha, factor_ck_pressure=alpha, early_stopping=True, patience=100)
+pp.fit(x, y, optimizer=opt, n_epochs=600, factor_approximation_quality=1-alpha, factor_ck_pressure=alpha, early_stopping=True, patience=100)
 ```
 
 Note: x-data will be rescaled so that every polynomial segment spans a range of $2$.  
